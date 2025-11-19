@@ -20,7 +20,7 @@ public class FirebaseConfig {
         }
 
         InputStream serviceAccount =
-                new ClassPathResource("firebase-service.json").getInputStream();
+                new ClassPathResource("google-service.json").getInputStream();
 
         FirebaseOptions options = FirebaseOptions.builder()
                 .setCredentials(GoogleCredentials.fromStream(serviceAccount))
@@ -30,3 +30,4 @@ public class FirebaseConfig {
         System.out.println("🔥 Firebase initialized (DEFAULT app)");
     }
 }
+
