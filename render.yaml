@@ -1,6 +1,7 @@
 services:
   - type: web
     name: lost-and-found-backend
+    rootDir: Backend
     runtime: docker
     plan: free
     autoDeploy: true
